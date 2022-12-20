@@ -9,6 +9,8 @@ class TestShopAssistance(unittest.TestCase):
         sword = Sword(12, 25, 9)
         items = [helmet, sword]
         shop = Shop(items)
+        shop.cart.add(helmet)
+        shop.cart.add(sword)
         knight = Knight(500)
         ShopAssistance.buy(shop, knight)
 

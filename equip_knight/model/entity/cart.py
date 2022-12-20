@@ -26,7 +26,6 @@ class Cart:
 
     def calculate_total_price(self):
         total = 0
-
         for i in range(self.size()):
             item = self.get(i)
             if isinstance(item, Item):
