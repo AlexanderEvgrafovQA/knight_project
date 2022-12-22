@@ -3,6 +3,7 @@ class Item:
     def __init__(self, price=0, weight=0):
         self.price = price
         self._weight = weight
+        self._slot_type = None
 
     @property
     def price(self):
@@ -31,6 +32,8 @@ class Item:
     def price(self):
         del self._price
 
+    def get_slot_type(self):
+        return self._slot_type
 
     def __str__(self):
         return f"price = {self.price}"
