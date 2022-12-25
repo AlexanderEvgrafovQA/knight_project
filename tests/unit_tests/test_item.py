@@ -5,11 +5,11 @@ from equip_knight.model.entity import *
 class TestItem(unittest.TestCase):
     def test_setter(self):
         item = Item()
-        item.price = 10
+        item._price = 10
 
         expected = 10
 
-        actual = item.price
+        actual = item._price
 
         self.assertEqual(expected, actual)
 
@@ -18,7 +18,7 @@ class TestItem(unittest.TestCase):
 
         expected = 0
 
-        actual = item.price
+        actual = item._price
 
         self.assertEqual(expected, actual)
 

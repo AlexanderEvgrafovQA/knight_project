@@ -9,3 +9,17 @@ class Sword(Item):
     def get_slot_type(self):
         return self._slot_type
 
+    @property
+    def damage(self):
+        return self._damage
+
+    @damage.setter
+    def damage(self, damage):
+        if damage > 0:
+            self._damage = damage
+        else:
+            raise Exception()
+
+    @damage.deleter
+    def damage(self):
+        del self._damage

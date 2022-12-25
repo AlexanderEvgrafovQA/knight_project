@@ -23,7 +23,7 @@ class TestCart(unittest.TestCase):
 
         self.assertEqual(expected, actual)
 
-    def test_calculate_total_price_with_empty_basket(self):
+    def test_calculate_total_price_with_empty_cart(self):
         expected = 0
         actual = Cart.calculate_total_price(Cart())
 

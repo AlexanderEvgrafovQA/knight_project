@@ -15,5 +15,11 @@ class Knight:
     def equip(self, item):
         if self.head_slot.get_slot_type() == item.get_slot_type():
             self.head_slot.set_item(item)
+        elif self.chest_slot.get_slot_type() == item.get_slot_type():
+            self.chest_slot.set_item(item)
+        elif self.right_hand_slot.get_slot_type() == item.get_slot_type():
+            self.right_hand_slot.set_item(item)
+        elif self.left_hand_slot.get_slot_type() == item.get_slot_type():
+            self.left_hand_slot.set_item(item)
 
 

@@ -6,8 +6,9 @@ class Slot():
     def get_slot_type(self):
         return self._type
 
-    def set_item(self, item):
-        self._item = item
 
     def get_item(self):
         return self._item
+
+    def set_item(self, item):
+        self._item = item
